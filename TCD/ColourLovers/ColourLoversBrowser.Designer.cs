@@ -2,7 +2,7 @@
  * Date: 21.12.2009
  * Time: 2:31
  */
-namespace TCD
+namespace TCD.ColourLovers
 {
 	partial class ColourLoversBrowser
 	{

@@ -39,8 +39,9 @@ namespace TCD
 			this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.decimalFormatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.colorPickerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+			this.decimalFormatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.alwaysOnTopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -57,7 +58,6 @@ namespace TCD
 			this.palOpenMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.palSaveMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.colourLoversToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.contextMenuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,7 +83,7 @@ namespace TCD
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(187, 179);
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(231, 187);
 			this.tableLayoutPanel1.TabIndex = 2;
 			// 
 			// listBox1
@@ -92,19 +92,18 @@ namespace TCD
 			this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
 			this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.listBox1.IntegralHeight = false;
-			this.listBox1.ItemHeight = 11;
 			this.listBox1.Items.AddRange(new object[] {
-									"Hold SHIFT+CTRL",
-									"to capture color",
-									"",
-									"Double-click items",
-									"here to copy;",
-									"right-click for options"});
+            "Hold SHIFT+CTRL",
+            "to capture color",
+            "",
+            "Double-click items",
+            "here to copy;",
+            "right-click for options"});
 			this.listBox1.Location = new System.Drawing.Point(0, 0);
 			this.listBox1.Margin = new System.Windows.Forms.Padding(0);
 			this.listBox1.Name = "listBox1";
 			this.tableLayoutPanel1.SetRowSpan(this.listBox1, 2);
-			this.listBox1.Size = new System.Drawing.Size(123, 128);
+			this.listBox1.Size = new System.Drawing.Size(167, 136);
 			this.listBox1.TabIndex = 1;
 			this.listBox1.DoubleClick += new System.EventHandler(this.ListBox1DoubleClick);
 			this.listBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ListBox1MouseDown);
@@ -113,19 +112,19 @@ namespace TCD
 			// 
 			this.contextMenuStrip1.BackColor = System.Drawing.Color.White;
 			this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.copyToolStripMenuItem,
-									this.pasteToolStripMenuItem,
-									this.toolStripSeparator1,
-									this.colorPickerToolStripMenuItem,
-									this.toolStripSeparator3,
-									this.decimalFormatToolStripMenuItem,
-									this.alwaysOnTopToolStripMenuItem});
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.colorPickerToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.decimalFormatToolStripMenuItem,
+            this.alwaysOnTopToolStripMenuItem});
 			this.contextMenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
 			this.contextMenuStrip1.Name = "contextMenuStrip1";
 			this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
 			this.contextMenuStrip1.ShowCheckMargin = true;
 			this.contextMenuStrip1.ShowImageMargin = false;
-			this.contextMenuStrip1.Size = new System.Drawing.Size(190, 148);
+			this.contextMenuStrip1.Size = new System.Drawing.Size(190, 126);
 			this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.ContextMenuStrip1Opening);
 			// 
 			// copyToolStripMenuItem
@@ -148,6 +147,18 @@ namespace TCD
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
 			this.toolStripSeparator1.Size = new System.Drawing.Size(186, 6);
 			// 
+			// colorPickerToolStripMenuItem
+			// 
+			this.colorPickerToolStripMenuItem.Name = "colorPickerToolStripMenuItem";
+			this.colorPickerToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+			this.colorPickerToolStripMenuItem.Text = "Color Picker";
+			this.colorPickerToolStripMenuItem.Click += new System.EventHandler(this.ColorPickerToolStripMenuItemClick);
+			// 
+			// toolStripSeparator3
+			// 
+			this.toolStripSeparator3.Name = "toolStripSeparator3";
+			this.toolStripSeparator3.Size = new System.Drawing.Size(186, 6);
+			// 
 			// decimalFormatToolStripMenuItem
 			// 
 			this.decimalFormatToolStripMenuItem.CheckOnClick = true;
@@ -155,13 +166,6 @@ namespace TCD
 			this.decimalFormatToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
 			this.decimalFormatToolStripMenuItem.Text = "100% Decimal Format";
 			this.decimalFormatToolStripMenuItem.CheckedChanged += new System.EventHandler(this.DecimalFormatToolStripMenuItemCheckedChanged);
-			// 
-			// colorPickerToolStripMenuItem
-			// 
-			this.colorPickerToolStripMenuItem.Name = "colorPickerToolStripMenuItem";
-			this.colorPickerToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-			this.colorPickerToolStripMenuItem.Text = "Color Picker";
-			this.colorPickerToolStripMenuItem.Click += new System.EventHandler(this.ColorPickerToolStripMenuItemClick);
 			// 
 			// alwaysOnTopToolStripMenuItem
 			// 
@@ -176,14 +180,14 @@ namespace TCD
 			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
 			this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Cross;
 			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pictureBox1.Location = new System.Drawing.Point(123, 0);
+			this.pictureBox1.Location = new System.Drawing.Point(167, 0);
 			this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+			this.pictureBox1.Size = new System.Drawing.Size(64, 68);
 			this.pictureBox1.TabIndex = 3;
 			this.pictureBox1.TabStop = false;
-			this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureBox1MouseMove);
 			this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PictureBox1MouseDown);
+			this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureBox1MouseMove);
 			this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PictureBox1MouseUp);
 			// 
 			// panel1
@@ -191,19 +195,19 @@ namespace TCD
 			this.panel1.Controls.Add(this.colorPreviewPanel);
 			this.panel1.Controls.Add(this.blurBox);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel1.Location = new System.Drawing.Point(123, 64);
+			this.panel1.Location = new System.Drawing.Point(167, 68);
 			this.panel1.Margin = new System.Windows.Forms.Padding(0);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(64, 64);
+			this.panel1.Size = new System.Drawing.Size(64, 68);
 			this.panel1.TabIndex = 4;
 			// 
 			// colorPreviewPanel
 			// 
 			this.colorPreviewPanel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.colorPreviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.colorPreviewPanel.Location = new System.Drawing.Point(0, 19);
+			this.colorPreviewPanel.Location = new System.Drawing.Point(0, 21);
 			this.colorPreviewPanel.Name = "colorPreviewPanel";
-			this.colorPreviewPanel.Size = new System.Drawing.Size(64, 45);
+			this.colorPreviewPanel.Size = new System.Drawing.Size(64, 47);
 			this.colorPreviewPanel.TabIndex = 6;
 			this.colorPreviewPanel.Click += new System.EventHandler(this.ColorPreviewPanelDoubleClick);
 			// 
@@ -214,13 +218,13 @@ namespace TCD
 			this.blurBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.blurBox.FormattingEnabled = true;
 			this.blurBox.Items.AddRange(new object[] {
-									"Precise",
-									"Blurry",
-									"Blurrier",
-									"Blurriest"});
+            "Precise",
+            "Blurry",
+            "Blurrier",
+            "Blurriest"});
 			this.blurBox.Location = new System.Drawing.Point(0, 0);
 			this.blurBox.Name = "blurBox";
-			this.blurBox.Size = new System.Drawing.Size(64, 19);
+			this.blurBox.Size = new System.Drawing.Size(64, 21);
 			this.blurBox.TabIndex = 5;
 			// 
 			// lastColorsBox
@@ -228,27 +232,27 @@ namespace TCD
 			this.tableLayoutPanel1.SetColumnSpan(this.lastColorsBox, 2);
 			this.lastColorsBox.ContextMenuStrip = this.paletteContextMenu;
 			this.lastColorsBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.lastColorsBox.Location = new System.Drawing.Point(0, 128);
+			this.lastColorsBox.Location = new System.Drawing.Point(0, 136);
 			this.lastColorsBox.Margin = new System.Windows.Forms.Padding(0);
 			this.lastColorsBox.Name = "lastColorsBox";
-			this.lastColorsBox.Size = new System.Drawing.Size(187, 51);
+			this.lastColorsBox.Size = new System.Drawing.Size(231, 51);
 			this.lastColorsBox.TabIndex = 5;
 			this.lastColorsBox.TabStop = false;
-			this.lastColorsBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lastColorsBoxMouseMove);
 			this.lastColorsBox.Click += new System.EventHandler(this.lastColorsBoxClick);
+			this.lastColorsBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lastColorsBoxMouseMove);
 			// 
 			// paletteContextMenu
 			// 
 			this.paletteContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.palCopyMenuItem,
-									this.palReplaceMenuItem,
-									this.palRemoveMenuItem,
-									this.toolStripSeparator2,
-									this.palCopyAllMenuItem,
-									this.palClearMenuItem,
-									this.palOpenMenuItem,
-									this.palSaveMenuItem,
-									this.colourLoversToolStripMenuItem});
+            this.palCopyMenuItem,
+            this.palReplaceMenuItem,
+            this.palRemoveMenuItem,
+            this.toolStripSeparator2,
+            this.palCopyAllMenuItem,
+            this.palClearMenuItem,
+            this.palOpenMenuItem,
+            this.palSaveMenuItem,
+            this.colourLoversToolStripMenuItem});
 			this.paletteContextMenu.Name = "paletteContextMenu";
 			this.paletteContextMenu.ShowImageMargin = false;
 			this.paletteContextMenu.Size = new System.Drawing.Size(137, 186);
@@ -313,22 +317,19 @@ namespace TCD
 			this.colourLoversToolStripMenuItem.Text = "COLOURlovers...";
 			this.colourLoversToolStripMenuItem.Click += new System.EventHandler(this.ColourLoversToolStripMenuItemClick);
 			// 
-			// toolStripSeparator3
-			// 
-			this.toolStripSeparator3.Name = "toolStripSeparator3";
-			this.toolStripSeparator3.Size = new System.Drawing.Size(186, 6);
-			// 
 			// MainForm
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(187, 179);
+			this.ClientSize = new System.Drawing.Size(231, 187);
 			this.ContextMenuStrip = this.contextMenuStrip1;
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.DoubleBuffered = true;
-			this.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Tiny Colorful Dots";
@@ -340,6 +341,7 @@ namespace TCD
 			((System.ComponentModel.ISupportInitialize)(this.lastColorsBox)).EndInit();
 			this.paletteContextMenu.ResumeLayout(false);
 			this.ResumeLayout(false);
+
 		}
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
 		private System.Windows.Forms.ToolStripMenuItem palReplaceMenuItem;
