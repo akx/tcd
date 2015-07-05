@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+# SharpDevelop 3.1.0.4977
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCD", "TCD\TCD.csproj", "{7E2CC5B5-4398-45B2-8D3D-0764AA83F06A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E2CC5B5-4398-45B2-8D3D-0764AA83F06A}.Debug|x86.Build.0 = Debug|x86
+		{7E2CC5B5-4398-45B2-8D3D-0764AA83F06A}.Debug|x86.ActiveCfg = Debug|x86
+		{7E2CC5B5-4398-45B2-8D3D-0764AA83F06A}.Release|x86.Build.0 = Release|x86
+		{7E2CC5B5-4398-45B2-8D3D-0764AA83F06A}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal
